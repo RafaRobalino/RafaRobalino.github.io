@@ -1,0 +1,430 @@
+/*Quito los margenes y padding para toda la pagina*/
+*{margin:0; padding: 0px;}
+
+/*Todas las cajas con borde rojo}
+*{border: 1px solid #FF0000;}*/
+
+/****************************************************************************************************************************/
+                                        /*Fuentes Descargadas*/
+@font-face {
+    font-family: 'Romanesco';
+    src: url(../fonts/Romanesco-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+/****************************************************************************************************************************/
+                                        /*Tipos de fuentes definidos*/
+/*Fuente: Titulo 1*/
+.titulo1{
+    font-size: 48px;
+    font-weight:bold;
+    font-family: 'Inter';
+}
+
+/*Fuente: Titulo 2*/
+.titulo2{
+    font-size: 32px;
+    font-weight: 600;   /*Semi Bold*/
+    font-family: 'Inter';
+}
+
+/*Fuente: Miniatura*/
+.miniatura{
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 400;   /*Normal (Regular)*/
+    font-family: 'Inter';
+}
+
+/*Fuente: Menu*/
+.menu{
+    font-size: 16px;
+    font-weight: 400;   /*Normal (Regular)*/
+    font-family: 'Inter';
+    text-transform: uppercase;
+}
+
+/*Fuente: Normal*/
+.normal{
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;   /*Normal (Regular)*/
+    font-family: 'Inter';
+}
+
+/*Fuente: Placeholder*/
+.placeholder{
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;   /*Normal (Regular)*/
+    font-family: 'Inter';
+    text-transform: uppercase;
+}
+
+/*Fuente: Romanesco*/
+.romanesco{
+    font-family: 'Romanesco';
+    font-size: 96px;
+    font-weight: 400;   /*Normal (Regular)*/
+}
+
+/******************************************************************************************************************************/
+                                          /* CABECERA */
+/*Caja que abarca toda la barra de la cabecera */
+header {
+    font-family: 'Inter';
+    height: 70px;
+    width: 100%;
+    background-color: #a3a656;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MenuHeader {
+    display: inline-block;
+    height: 70px;
+    width: 60%;
+    padding-left: 70px;
+}
+
+.MenuHeader ul {
+    list-style-type: none;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    gap: 25px;
+}
+
+.MenuHeader ul li:hover {
+   color: #FFFF00 ;
+}
+
+.Informacion {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.Informacion div {
+    float: right;
+}
+
+.ContenedorInformacion {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 40px;
+}
+
+#Micuenta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ContenedorIdioma {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/***********************************************************************************************************************/
+                                        /* IMAGEN DE FONDO */
+/* Imagen de fondo */
+#imagen img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Caja titulo SPA */
+.caja-titulo_spa{
+    position: absolute;
+    text-align: center;
+    top: 250px;
+    left: 120px;
+}
+
+/* Caja descripcion SPA */
+.caja-descripcion_spa{
+    position: absolute;
+    top: 330px;
+    left: 120px;
+    margin: 50px 0;
+    width: 550px;
+}
+
+/***********************************************************************************************************************/
+                                    /* CAJA DE RESERVA Y CODIGO */
+/* Caja reserva y codigo */
+#h_reserva{
+    background-color: #F2F6F6;
+    height: 100px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Caja de reserva */
+#caja_reserva{
+    display: inline-flex;
+    justify-content: center;
+}
+
+#h_reserva p{   
+    padding: 13px;
+}
+
+.redondeado_reserva {
+    border-radius: 15px;
+    border: 0px;
+    width: 200px;
+    height: 50px;
+    padding-left: 10px;
+}
+
+/* Caja de codigo promocional */
+#caja_codigo{
+    display: inline-flex;
+    justify-content: center;
+}
+
+.redondeado_codigo {
+    border-radius: 15px;
+    border: 0px;
+    width: 200px;
+    height: 50px;
+    padding-left: 10px;
+    Color: #9E9A9A;
+}
+
+/***********************************************************************************************************************/
+                                /* SECCION DE CARTAS DE MASAJES */
+#opciones_Masaje{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ------------------- Carta ------------------ */
+.card_m{ 
+    width: 350px;
+    text-align: center;
+    display: inline-block;
+
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+/* Caja titulo para la carta */
+.caja_titulo{    
+    border-radius: 15px 15px 0 0;
+    background-color: #A3A656;
+    color: white;
+    height: 40px;
+    padding: 17px;
+}
+
+/* Imagen */
+.card_m img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Descripcion de la carta */
+.card_m .miniatura{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/* Caja para el precio y el boton reservar */
+.precio_boton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+}
+
+/* Caja para el precio */
+.precio_boton p{
+    margin-left: 10px;
+}
+
+/* Caja para el botón de reservar */
+.precio_boton a{
+    padding: 10px;
+
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;   /*Semibold*/
+    font-family: 'Inter';
+    text-transform: uppercase;
+
+    border-radius: 15px;
+    background-color: #A3A656;
+
+    width: 130px;
+}
+
+/* Cambiar color de fondo al pasar el mouse */
+.precio_boton a:hover{
+    background-color:#384001;
+}
+
+/***********************************************************************************************************************/
+                                    /* SECCION DE CARTAS DE SOCIO */
+/* Seccion: Socio */
+#socio{
+    background-color: #F2F6F6;
+    height: 770px;
+}
+
+/* Caja contenedora de las cartas de socios */
+#caja-cartas_socios{
+    display: flex;
+    justify-content: center;   
+    gap: 134px;
+}
+
+/* Titulo de la seccion de socios */
+#socio .titulo2{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* ------------------- Carta ------------------ */
+.card_s{ 
+    width: 300px;
+    margin: 100px 0px;
+    display: inline-block;
+    text-align: center;
+}
+
+.contenedor_circulo{
+    display: flex;
+    justify-content: center; 
+}
+
+.imagen_socio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 233px;
+    height: 233px;
+    border-radius: 50%;
+    
+    /* Borde y fondo del circulo */
+    background-color: white;
+    border: solid #384001;
+    border-width: 11px;
+}
+
+.card_s .titulo2{
+    text-transform: uppercase;
+}
+
+.card_s a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;   /*Semibold*/
+    font-family: 'Inter';
+    text-transform: uppercase;
+
+    border-radius: 15px;
+    background-color: #A3A656;
+
+    width: 280px;
+}
+
+/* Cambiar color de fondo al pasar el mouse */
+.card_s a:hover{
+    background-color:#384001;
+}
+
+.card_s ul{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.card_s ul li{
+    padding: 4px;
+}
+
+/******************************************************************************************************************************/
+                                      /* PIE DE PAGINA */
+/*Caja que abarca toda la barra del pie de pagina */
+footer {
+    height: 97px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #384001;
+    color: #A3A656
+}
+
+/* Caja de la Barra de navegacion */
+.MenuFooter {
+    display: inline-block;
+    height: 97px;
+    width: 60%;
+    padding-left: 70px;
+}
+
+.MenuFooter ul {
+    list-style-type: none;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    gap: 50px;
+}
+
+.MenuFooter ul li:hover {
+   color: #FFFF00 ;
+}
+
+/* Caja de la esquina inferior derecha */
+.redesSociales {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.redesSociales div {
+    float: right;
+}
+
+/* Caja que contiene las tres imagenes */
+.ContenedorRedes {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
